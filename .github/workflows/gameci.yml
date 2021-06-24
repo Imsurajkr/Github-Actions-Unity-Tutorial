@@ -20,12 +20,12 @@ jobs:
           key: Library
 
       # Test
-      - name: Run tests
-        uses: game-ci/unity-test-runner@v2
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          githubToken: ${{ secrets.TOKEN_GITHUB }}
+      #- name: Run tests
+      #  uses: game-ci/unity-test-runner@v2
+      #  env:
+      #    UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+      #  with:
+      #    githubToken: ${{ secrets.TOKEN_GITHUB }}
 
       # Build
       - name: Build project
