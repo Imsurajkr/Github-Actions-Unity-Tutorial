@@ -37,7 +37,8 @@ jobs:
         with:
           unityVersion: 2019.3.14f1
           targetPlatform: StandaloneWindows64 
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Output 
       - uses: actions/upload-artifact@v1
         with:
